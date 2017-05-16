@@ -1,0 +1,95 @@
+6/6/2002 - Version 1.1
+
+Added ability to handled data sets with more than one matrix in an input file,
+as well as the ability to handle more than one input tree.
+
+
+8/26/2002  - Version 1.1.1
+
+Removed bug in NNI.c 
+
+9/2002    - Version 1.1.2
+Removed bug in main program in print statement called only in verbose mode.
+
+10/1/2002  - Version 1.2
+Added ability to simply assign OLS or balanced weights on an input topology,
+without doing any NNIs.
+
+11/19/2002 - Version 1.2.1
+Fixed parts of newick.c to make it preserve the exact order of the input
+topology.
+
+2/28/2003 - Version 1.3
+Expanded search of bNNI to retest all edges, rather than only edges adjacent to changed edge.
+
+10/6/2004 - Version 1.4
+adding distance estimation capability from sequence data
+
+11/17/2004 - Version 1.4.1 
+added ability to handle gapped sequences
+
+12/7/2004 - Version 1.5
+added SPR functionality
+
+7/13/2005 Version 1.5.1
+adding more protein formulae
+
+8/2005
+distance formulae finished
+
+added NJ routine for building initial tree
+
+added *.mat score matrices for scoredist routine
+bootstrapped functionality verified
+minor change to tree building - nodes in set 'species' are
+not used in tree.  This change is to allow bootstrapping to repeatedly
+build multiple trees on the same set of nodes.
+
+9/2005
+a release version Version 2.0
+
+7/2007
+v 2.01
+added gamma rate variation
+changed gap filter to be pairwise by default
+reduced node labels to nine characters at maximum
+added capability of sequence input to ignore space characters in sequence
+
+7/19/2007
+v 2.02
+SPR routine is rewritten, fixed, and a bit faster 
+ 
+9/21/2007
+TBR routine written
+
+9/27/2007
+TBR.c debugged, CompDist.c and FastDist.c added in to v 2.03
+
+12/12/2007 - Version 2.04
+newick.c debugged.
+Added BIONJ.c and MVR.c to implement NJ, BIONJ and UNJ algorithms.
+Added interface_options.c interface_utilities.c interface_free.c for the
+PHYLIP like interface, the command line interface and the man like usage.
+Added an extra information file output (_stat.txt).
+Formatted the standard and verbose output.
+General code structure cleaned, generalization of header files.
+Security issue: replaced unsafety functions (strcpy strcmp sprintf) by their
+safety equivalent functions (strncpy strncmp snprintf) to avoid buffer overflow.
+
+3/10/2008 - Version 2.05
+Removed interface_free.c.
+Added p_eigen.c p_lk.c p_models.c p_optimiz.c p_utils.c to integrate
+distance computation from protein alignment (heavily borrowed from PhyML).
+Replaced discrete gamma law by continous gamma law.
+
+7/18/2008 - Version 2.06
+Added p_bootstrap.c to finalize bootstraps (heavily borrowed from PhyML).
+Added the boostrap trees output file.
+Removed print.c and print.h
+
+1/10/2008 - Version 2.07
+Harmonized models global constants and corresponding functions names.
+Set default model to F84 for nucleotides and to LG for amino-acids.
+Corected option argument error when choosing SCOREDIST model.
+
+

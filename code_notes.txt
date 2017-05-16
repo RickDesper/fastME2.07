@@ -1,0 +1,82 @@
+SPRTopShift
+(esplit->head, etop, DOWN)
+(esplit->head, ebottom, UP)
+
+DOWN = tree being moved is below split edge
+UP = tree moving moved is above split edge
+
+TBR: first uses assignTBRDownWeights* to assign values to each edge above esplit
+for any SPR of tree below split edge to new position in tree above split edge
+
+Second, uses calcTBRaverages to calculate average distance from each subtree
+below splitEdge to subtree above splitEdge for any possible insertion point
+
+Third uses assignTBRUPWeights to assign values to each edge below esplit
+for sum of
+a) SPR of tree at the edge below the split edge
+b) optimal SPR at edge above split edge, for this edge below split edge
+
+
+assignTBRDownWeights*(etest,vtest,va,back,cprev,oldD_AB,coeff,A,swapWeights)
+
+etest is proposed splitting point for tree below vtest (called 'B')
+va root of 'A', the topological sister tree to B: sibling tree
+when going up, tree above when going down in sibling tree
+back is edge on path back to vtest
+cprev is root of previous tree (C_i) passed by B
+oldD_AB is balanced average distance from B to (A union C through Ci)
+*=Up path from edge to root of tree ('back' is below etest)
+*=Skew edge whose tail is on path up from vtest ('back' is sibling edge)
+*=Down edge below a skew edge ('back' is parental to etest)
+
+this assigns the value to swapWeights[vtest->index][etest->head->index][etest->head->index]
+for the SPR splitting etest with the tree below vtest (and no SPR on the
+other side)
+ function skips testing sib and par edge at top level since splitting either
+of these two edges results in no topological change!
+
+assignTBRUpWeights
+void assignTBRUpWeights(edge *etest, node *vtest, node *va, edge *back, node *cprev, 
+double oldD_AB, double coeff, double **A, double **dXTop, double ***swapWeights, edge *etop, 
+double *bestWeight, edge **bestSplit, edge **bestTop, edge **bestBottom)
+
+vtest is head of split edge - outermost loop
+etop is edge above etest where the SPR is going to happen - etop is used in middle loop
+etest is edge below vtest for bottom SPR - inner loop (actually recursively called)
+va, back, cprev, oldD_AB, coef, A, swapWeights as above
+dXTop is array of average distances from any subtree below vtest to any tree above vtest.
+
+these are calculated by the function calcTBRaverages
+
+void calcTBRaverages(tree *T, edge *esplit, double **A, double **dXTop)
+
+fills array dxTop where, for i < esplit < j in the tree, dxTop[i][j] is the
+average distance from the subtree rooted at i if the SPR in the top tree is at the edge
+whose head is j.  dxTop is the only extra data structure needed to calculate weights for the second
+SPR used by TBR.  Primarily uses two calls to 
+
+void calcTBRTopBottomAverage(node *vbottom, double **A, double **dXTop, double dXOut,
+	edge *esplit, edge *ebreak, edge *eback, int UpOrDown)
+This is a recursive function called for a fixed value of vbottom each time. esplit is the split edge
+of the TBR, 
+
+Here vbottom is the root i mentioned above, 
+
+
+FASTDIST computations
+
+procedural hierarchy
+
+main 
+-> Get_Seq returns **seq
+-> CompactSeq returns *allseq if protein
+
+DNA --> calls makeDistMatrix
+protein -> calls ML_dist
+
+makeDistMatrix calls FastDist
+
+FastDist calls 
+Statistics
+StatisticIJ
+

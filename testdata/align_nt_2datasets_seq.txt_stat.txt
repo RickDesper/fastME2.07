@@ -1,0 +1,881 @@
+
+ - FastME v2.06 - 
+
+
+Papers to be cited:
+
+FastME algorithms (balanced and OLS GME, balanced and OLS NNI, balanced and OLS branch length optimization):
+	Desper R., Gascuel O. 2002. Fast and accurate phylogeny reconstruction algorithms based on the minimum-evolution principle.
+	Journal of Computational Biology. 9(5):687-705.
+BIONJ algorithm:
+	Gascuel O. 1997. BIONJ: an improved version of the NJ algorithm based on a simple model of sequence data.
+	Molecular Biology and Evolution, 14(7):685-695
+NJ algorithm:
+	Saitou N., Nei M. 1987. The neighbor-joining method: a new method for reconstructing phylogenetic trees.
+	Molecular Biology and Evolution, 4(4):406-25
+UNJ algorithm:
+	Gascuel O. 1997. Concerning the NJ algorithm and its unweighted version, UNJ.
+	Mathematical Hierarchies and Biology,
+	B. Mirkin, F.R. McMorris, F.S. Roberts and A. Rzetsky (eds.),
+	American Mathematical Society, Providence, 149-170
+
+-------------------------------------------------------------------------------
+Settings for this run:
+
+  M                              Initial building method  Balanced        
+  I                                      Input data type  DNA             
+  E                               DNA evolutionary model  Felsenstein     
+  B                      Bootstrap: number of replicates  15              
+  G                    Gamma rate variation across sites  1.000000        
+  R                              Remove sites whith gaps  no              
+  O                    Output calculated distance matrix  no              
+
+  D                                   Number of datasets  2               
+  N  Type of tree swapping (NNI) (balanced, OLS or none)  Balanced        
+  S                                   SPR postprocessing  yes             
+  T                                   TBR postprocessing  yes             
+
+-------------------------------------------------------------------------------
+Dataset n° 1
+	Before NNI:     tree length is 4.225655.
+	NNI      1: new tree length is 4.212348.
+	NNI      2: new tree length is 4.208798.
+	NNI      3: new tree length is 4.207343.
+	NNI      4: new tree length is 4.205780.
+	NNI      5: new tree length is 4.204768.
+	NNI      6: new tree length is 4.204010.
+	NNI      7: new tree length is 4.203575.
+	NNI      8: new tree length is 4.203231.
+	NNI      9: new tree length is 4.203062.
+	NNI     10: new tree length is 4.202963.
+	SPR      1: new tree length is 4.208798.
+	SPR      2: new tree length is 4.205780.
+	SPR      3: new tree length is 4.204768.
+	SPR      4: new tree length is 4.204010.
+	SPR      5: new tree length is 4.203558.
+	SPR      6: new tree length is 4.203131.
+	SPR      7: new tree length is 4.202963.
+	TBR      1: new tree length is 4.208798.
+	TBR      2: new tree length is 4.205780.
+	TBR      3: new tree length is 4.204768.
+	TBR      4: new tree length is 4.203850.
+	TBR      5: new tree length is 4.203398.
+	TBR      6: new tree length is 4.202963.
+	Performed 10 NNI(s), 7 SPR(s) and 6 TBR(s).
+
+	##### Boostraps n°1 #####
+	Before NNI:     tree length is 4.379160.
+	NNI      1: new tree length is 4.374225.
+	NNI      2: new tree length is 4.369958.
+	NNI      3: new tree length is 4.365684.
+	NNI      4: new tree length is 4.364201.
+	NNI      5: new tree length is 4.363123.
+	NNI      6: new tree length is 4.361740.
+	NNI      7: new tree length is 4.361167.
+	NNI      8: new tree length is 4.360681.
+	NNI      9: new tree length is 4.359927.
+	NNI     10: new tree length is 4.359923.
+	SPR      1: new tree length is 4.369831.
+	SPR      2: new tree length is 4.365213.
+	SPR      3: new tree length is 4.361740.
+	SPR      4: new tree length is 4.360471.
+	SPR      5: new tree length is 4.359927.
+	SPR      6: new tree length is 4.359923.
+	TBR      1: new tree length is 4.369831.
+	TBR      2: new tree length is 4.364137.
+	TBR      3: new tree length is 4.359960.
+	TBR      4: new tree length is 4.358724.
+	TBR      5: new tree length is 4.358714.
+	TBR      6: new tree length is 4.358714.
+	TBR      7: new tree length is 4.358714.
+	TBR      8: new tree length is 4.358714.
+	Performed 10 NNI(s), 6 SPR(s) and 8 TBR(s).
+
+	##### Boostraps n°2 #####
+	Before NNI:     tree length is 4.578180.
+	NNI      1: new tree length is 4.567416.
+	NNI      2: new tree length is 4.564763.
+	NNI      3: new tree length is 4.563597.
+	NNI      4: new tree length is 4.563212.
+	NNI      5: new tree length is 4.562951.
+	NNI      6: new tree length is 4.562857.
+	SPR      1: new tree length is 4.567416.
+	SPR      2: new tree length is 4.564763.
+	SPR      3: new tree length is 4.563597.
+	SPR      4: new tree length is 4.563212.
+	SPR      5: new tree length is 4.562951.
+	SPR      6: new tree length is 4.562857.
+	TBR      1: new tree length is 4.567416.
+	TBR      2: new tree length is 4.564763.
+	TBR      3: new tree length is 4.563597.
+	TBR      4: new tree length is 4.563212.
+	TBR      5: new tree length is 4.562951.
+	TBR      6: new tree length is 4.562857.
+	Performed 6 NNI(s), 6 SPR(s) and 6 TBR(s).
+
+	##### Boostraps n°3 #####
+	Before NNI:     tree length is 4.393610.
+	NNI      1: new tree length is 4.384594.
+	NNI      2: new tree length is 4.379888.
+	NNI      3: new tree length is 4.375696.
+	NNI      4: new tree length is 4.370111.
+	NNI      5: new tree length is 4.366939.
+	NNI      6: new tree length is 4.366217.
+	NNI      7: new tree length is 4.365528.
+	SPR      1: new tree length is 4.384594.
+	SPR      2: new tree length is 4.375696.
+	SPR      3: new tree length is 4.370111.
+	SPR      4: new tree length is 4.366939.
+	SPR      5: new tree length is 4.366217.
+	SPR      6: new tree length is 4.365528.
+	TBR      1: new tree length is 4.383761.
+	TBR      2: new tree length is 4.376271.
+	TBR      3: new tree length is 4.366939.
+	TBR      4: new tree length is 4.365528.
+	Performed 7 NNI(s), 6 SPR(s) and 4 TBR(s).
+
+	##### Boostraps n°4 #####
+	Before NNI:     tree length is 4.338294.
+	NNI      1: new tree length is 4.337466.
+	NNI      2: new tree length is 4.336844.
+	NNI      3: new tree length is 4.336721.
+	SPR      1: new tree length is 4.337466.
+	SPR      2: new tree length is 4.336844.
+	SPR      3: new tree length is 4.336721.
+	TBR      1: new tree length is 4.337466.
+	TBR      2: new tree length is 4.336844.
+	TBR      3: new tree length is 4.336721.
+	Performed 3 NNI(s), 3 SPR(s) and 3 TBR(s).
+
+	##### Boostraps n°5 #####
+	Before NNI:     tree length is 4.291656.
+	NNI      1: new tree length is 4.278304.
+	NNI      2: new tree length is 4.273552.
+	NNI      3: new tree length is 4.271157.
+	NNI      4: new tree length is 4.268809.
+	NNI      5: new tree length is 4.267501.
+	NNI      6: new tree length is 4.266867.
+	NNI      7: new tree length is 4.266442.
+	NNI      8: new tree length is 4.266115.
+	NNI      9: new tree length is 4.265988.
+	SPR      1: new tree length is 4.275832.
+	SPR      2: new tree length is 4.270167.
+	SPR      3: new tree length is 4.267902.
+	SPR      4: new tree length is 4.266867.
+	SPR      5: new tree length is 4.266412.
+	SPR      6: new tree length is 4.265988.
+	TBR      1: new tree length is 4.275832.
+	TBR      2: new tree length is 4.270167.
+	TBR      3: new tree length is 4.267902.
+	TBR      4: new tree length is 4.266442.
+	TBR      5: new tree length is 4.265988.
+	Performed 9 NNI(s), 6 SPR(s) and 5 TBR(s).
+
+	##### Boostraps n°6 #####
+	Before NNI:     tree length is 4.317803.
+	NNI      1: new tree length is 4.316361.
+	NNI      2: new tree length is 4.315628.
+	NNI      3: new tree length is 4.315384.
+	NNI      4: new tree length is 4.315121.
+	SPR      1: new tree length is 4.316361.
+	SPR      2: new tree length is 4.315628.
+	SPR      3: new tree length is 4.315384.
+	SPR      4: new tree length is 4.315121.
+	TBR      1: new tree length is 4.316361.
+	TBR      2: new tree length is 4.315628.
+	TBR      3: new tree length is 4.315205.
+	Performed 4 NNI(s), 4 SPR(s) and 3 TBR(s).
+
+	##### Boostraps n°7 #####
+	Before NNI:     tree length is 4.269250.
+	NNI      1: new tree length is 4.259958.
+	NNI      2: new tree length is 4.252769.
+	NNI      3: new tree length is 4.245461.
+	NNI      4: new tree length is 4.238479.
+	NNI      5: new tree length is 4.233974.
+	NNI      6: new tree length is 4.233690.
+	NNI      7: new tree length is 4.231479.
+	NNI      8: new tree length is 4.231130.
+	NNI      9: new tree length is 4.230849.
+	NNI     10: new tree length is 4.230796.
+	SPR      1: new tree length is 4.249983.
+	SPR      2: new tree length is 4.242488.
+	SPR      3: new tree length is 4.238066.
+	SPR      4: new tree length is 4.235044.
+	SPR      5: new tree length is 4.232896.
+	SPR      6: new tree length is 4.231404.
+	SPR      7: new tree length is 4.230636.
+	SPR      8: new tree length is 4.227316.
+	TBR      1: new tree length is 4.249983.
+	TBR      2: new tree length is 4.242322.
+	TBR      3: new tree length is 4.237456.
+	TBR      4: new tree length is 4.233463.
+	TBR      5: new tree length is 4.231208.
+	TBR      6: new tree length is 4.230849.
+	TBR      7: new tree length is 4.230630.
+	TBR      8: new tree length is 4.230572.
+	TBR      9: new tree length is 4.230498.
+	TBR     10: new tree length is 4.230445.
+	TBR     11: new tree length is 4.230577.
+	TBR     12: new tree length is 4.230519.
+	TBR     13: new tree length is 4.230445.
+	TBR     14: new tree length is 4.230577.
+	TBR     15: new tree length is 4.230519.
+	TBR     16: new tree length is 4.230445.
+	Performed 10 NNI(s), 8 SPR(s) and 16 TBR(s).
+
+	##### Boostraps n°8 #####
+	Before NNI:     tree length is 4.190301.
+	NNI      1: new tree length is 4.187130.
+	NNI      2: new tree length is 4.182521.
+	NNI      3: new tree length is 4.179657.
+	NNI      4: new tree length is 4.175474.
+	NNI      5: new tree length is 4.173338.
+	NNI      6: new tree length is 4.172485.
+	NNI      7: new tree length is 4.172050.
+	NNI      8: new tree length is 4.171537.
+	NNI      9: new tree length is 4.171438.
+	NNI     10: new tree length is 4.171365.
+	SPR      1: new tree length is 4.180484.
+	SPR      2: new tree length is 4.176005.
+	SPR      3: new tree length is 4.173883.
+	SPR      4: new tree length is 4.172942.
+	SPR      5: new tree length is 4.172087.
+	SPR      6: new tree length is 4.171415.
+	SPR      7: new tree length is 4.171390.
+	TBR      1: new tree length is 4.180484.
+	TBR      2: new tree length is 4.175474.
+	TBR      3: new tree length is 4.173338.
+	TBR      4: new tree length is 4.172391.
+	TBR      5: new tree length is 4.171537.
+	TBR      6: new tree length is 4.171044.
+	TBR      7: new tree length is 4.170756.
+	TBR      8: new tree length is 4.170756.
+	TBR      9: new tree length is 4.170796.
+	TBR     10: new tree length is 4.170748.
+	TBR     11: new tree length is 4.170756.
+	Performed 10 NNI(s), 7 SPR(s) and 11 TBR(s).
+
+	##### Boostraps n°9 #####
+	Before NNI:     tree length is 4.491663.
+	NNI      1: new tree length is 4.483979.
+	NNI      2: new tree length is 4.481655.
+	NNI      3: new tree length is 4.480487.
+	NNI      4: new tree length is 4.477558.
+	NNI      5: new tree length is 4.476523.
+	NNI      6: new tree length is 4.475463.
+	NNI      7: new tree length is 4.473316.
+	NNI      8: new tree length is 4.473010.
+	SPR      1: new tree length is 4.481988.
+	SPR      2: new tree length is 4.477305.
+	SPR      3: new tree length is 4.475809.
+	SPR      4: new tree length is 4.474402.
+	SPR      5: new tree length is 4.474137.
+	TBR      1: new tree length is 4.481988.
+	TBR      2: new tree length is 4.477305.
+	TBR      3: new tree length is 4.475809.
+	TBR      4: new tree length is 4.474402.
+	TBR      5: new tree length is 4.472620.
+	TBR      6: new tree length is 4.471591.
+	TBR      7: new tree length is 4.472089.
+	TBR      8: new tree length is 4.471591.
+	TBR      9: new tree length is 4.473010.
+	TBR     10: new tree length is 4.472089.
+	TBR     11: new tree length is 4.471591.
+	TBR     12: new tree length is 4.472089.
+	TBR     13: new tree length is 4.471591.
+	Performed 8 NNI(s), 5 SPR(s) and 13 TBR(s).
+
+	##### Boostraps n°10 #####
+	Before NNI:     tree length is 4.429942.
+	NNI      1: new tree length is 4.423921.
+	NNI      2: new tree length is 4.423031.
+	NNI      3: new tree length is 4.422426.
+	NNI      4: new tree length is 4.421685.
+	NNI      5: new tree length is 4.421484.
+	NNI      6: new tree length is 4.421286.
+	SPR      1: new tree length is 4.423921.
+	SPR      2: new tree length is 4.422575.
+	SPR      3: new tree length is 4.421685.
+	SPR      4: new tree length is 4.421484.
+	SPR      5: new tree length is 4.421286.
+	TBR      1: new tree length is 4.423921.
+	TBR      2: new tree length is 4.422575.
+	TBR      3: new tree length is 4.421685.
+	TBR      4: new tree length is 4.421484.
+	TBR      5: new tree length is 4.421286.
+	Performed 6 NNI(s), 5 SPR(s) and 5 TBR(s).
+
+	##### Boostraps n°11 #####
+	Before NNI:     tree length is 4.221768.
+	NNI      1: new tree length is 4.219922.
+	NNI      2: new tree length is 4.218893.
+	NNI      3: new tree length is 4.218034.
+	NNI      4: new tree length is 4.217359.
+	NNI      5: new tree length is 4.216407.
+	NNI      6: new tree length is 4.216369.
+	NNI      7: new tree length is 4.216336.
+	SPR      1: new tree length is 4.219863.
+	SPR      2: new tree length is 4.218017.
+	SPR      3: new tree length is 4.216954.
+	SPR      4: new tree length is 4.216374.
+	SPR      5: new tree length is 4.216336.
+	TBR      1: new tree length is 4.219863.
+	TBR      2: new tree length is 4.218017.
+	TBR      3: new tree length is 4.216954.
+	TBR      4: new tree length is 4.216374.
+	TBR      5: new tree length is 4.216336.
+	Performed 7 NNI(s), 5 SPR(s) and 5 TBR(s).
+
+	##### Boostraps n°12 #####
+	Before NNI:     tree length is 4.393594.
+	NNI      1: new tree length is 4.386225.
+	NNI      2: new tree length is 4.382621.
+	NNI      3: new tree length is 4.381917.
+	NNI      4: new tree length is 4.381455.
+	NNI      5: new tree length is 4.379848.
+	NNI      6: new tree length is 4.379397.
+	SPR      1: new tree length is 4.384813.
+	SPR      2: new tree length is 4.382407.
+	SPR      3: new tree length is 4.381917.
+	SPR      4: new tree length is 4.381455.
+	SPR      5: new tree length is 4.379848.
+	SPR      6: new tree length is 4.379397.
+	TBR      1: new tree length is 4.382621.
+	TBR      2: new tree length is 4.379848.
+	TBR      3: new tree length is 4.379397.
+	Performed 6 NNI(s), 6 SPR(s) and 3 TBR(s).
+
+	##### Boostraps n°13 #####
+	Before NNI:     tree length is 4.404100.
+	NNI      1: new tree length is 4.399956.
+	NNI      2: new tree length is 4.395726.
+	NNI      3: new tree length is 4.392528.
+	NNI      4: new tree length is 4.390279.
+	NNI      5: new tree length is 4.389493.
+	NNI      6: new tree length is 4.389129.
+	SPR      1: new tree length is 4.399956.
+	SPR      2: new tree length is 4.395726.
+	SPR      3: new tree length is 4.392528.
+	SPR      4: new tree length is 4.390279.
+	SPR      5: new tree length is 4.389493.
+	SPR      6: new tree length is 4.389129.
+	TBR      1: new tree length is 4.395726.
+	TBR      2: new tree length is 4.392528.
+	TBR      3: new tree length is 4.389493.
+	TBR      4: new tree length is 4.389129.
+	Performed 6 NNI(s), 6 SPR(s) and 4 TBR(s).
+
+	##### Boostraps n°14 #####
+	Before NNI:     tree length is 4.599292.
+	NNI      1: new tree length is 4.584865.
+	NNI      2: new tree length is 4.573168.
+	NNI      3: new tree length is 4.566774.
+	NNI      4: new tree length is 4.563069.
+	NNI      5: new tree length is 4.561710.
+	NNI      6: new tree length is 4.559978.
+	NNI      7: new tree length is 4.559113.
+	NNI      8: new tree length is 4.558584.
+	NNI      9: new tree length is 4.558321.
+	SPR      1: new tree length is 4.573168.
+	SPR      2: new tree length is 4.566774.
+	SPR      3: new tree length is 4.563069.
+	SPR      4: new tree length is 4.559978.
+	SPR      5: new tree length is 4.559113.
+	SPR      6: new tree length is 4.558584.
+	SPR      7: new tree length is 4.558276.
+	SPR      8: new tree length is 4.558274.
+	SPR      9: new tree length is 4.558274.
+	TBR      1: new tree length is 4.566774.
+	TBR      2: new tree length is 4.563069.
+	TBR      3: new tree length is 4.559978.
+	TBR      4: new tree length is 4.559113.
+	TBR      5: new tree length is 4.558584.
+	TBR      6: new tree length is 4.558276.
+	TBR      7: new tree length is 4.558274.
+	TBR      8: new tree length is 4.558274.
+	Performed 9 NNI(s), 9 SPR(s) and 8 TBR(s).
+
+	##### Boostraps n°15 #####
+	Before NNI:     tree length is 4.397492.
+	NNI      1: new tree length is 4.393251.
+	NNI      2: new tree length is 4.388300.
+	NNI      3: new tree length is 4.384349.
+	NNI      4: new tree length is 4.382043.
+	NNI      5: new tree length is 4.379759.
+	NNI      6: new tree length is 4.379041.
+	NNI      7: new tree length is 4.378340.
+	NNI      8: new tree length is 4.377827.
+	NNI      9: new tree length is 4.377190.
+	NNI     10: new tree length is 4.376947.
+	NNI     11: new tree length is 4.376740.
+	SPR      1: new tree length is 4.386432.
+	SPR      2: new tree length is 4.383630.
+	SPR      3: new tree length is 4.381083.
+	SPR      4: new tree length is 4.378134.
+	SPR      5: new tree length is 4.377621.
+	SPR      6: new tree length is 4.376985.
+	SPR      7: new tree length is 4.376740.
+	TBR      1: new tree length is 4.386432.
+	TBR      2: new tree length is 4.383630.
+	TBR      3: new tree length is 4.381083.
+	TBR      4: new tree length is 4.378134.
+	TBR      5: new tree length is 4.376985.
+	TBR      6: new tree length is 4.376740.
+	Performed 11 NNI(s), 7 SPR(s) and 6 TBR(s).
+
+Dataset n° 2
+	Before NNI:     tree length is 4.102495.
+	NNI      1: new tree length is 4.088773.
+	NNI      2: new tree length is 4.081332.
+	NNI      3: new tree length is 4.076433.
+	NNI      4: new tree length is 4.074298.
+	NNI      5: new tree length is 4.073697.
+	SPR      1: new tree length is 4.081332.
+	SPR      2: new tree length is 4.076433.
+	SPR      3: new tree length is 4.074298.
+	SPR      4: new tree length is 4.073697.
+	TBR      1: new tree length is 4.081332.
+	TBR      2: new tree length is 4.076433.
+	TBR      3: new tree length is 4.074298.
+	TBR      4: new tree length is 4.073697.
+	Performed 5 NNI(s), 4 SPR(s) and 4 TBR(s).
+
+	##### Boostraps n°1 #####
+	Before NNI:     tree length is 4.235921.
+	NNI      1: new tree length is 4.206114.
+	NNI      2: new tree length is 4.195114.
+	NNI      3: new tree length is 4.187167.
+	NNI      4: new tree length is 4.183007.
+	NNI      5: new tree length is 4.181811.
+	NNI      6: new tree length is 4.180739.
+	NNI      7: new tree length is 4.180338.
+	SPR      1: new tree length is 4.202981.
+	SPR      2: new tree length is 4.189878.
+	SPR      3: new tree length is 4.181935.
+	SPR      4: new tree length is 4.180338.
+	SPR      5: new tree length is 4.179384.
+	SPR      6: new tree length is 4.175547.
+	SPR      7: new tree length is 4.179384.
+	SPR      8: new tree length is 4.175547.
+	TBR      1: new tree length is 4.195114.
+	TBR      2: new tree length is 4.186106.
+	TBR      3: new tree length is 4.178205.
+	TBR      4: new tree length is 4.176619.
+	TBR      5: new tree length is 4.175547.
+	TBR      6: new tree length is 4.179384.
+	TBR      7: new tree length is 4.175547.
+	Performed 7 NNI(s), 8 SPR(s) and 7 TBR(s).
+
+	##### Boostraps n°2 #####
+	Before NNI:     tree length is 4.089993.
+	NNI      1: new tree length is 4.087191.
+	NNI      2: new tree length is 4.085538.
+	NNI      3: new tree length is 4.083875.
+	NNI      4: new tree length is 4.083213.
+	NNI      5: new tree length is 4.082931.
+	NNI      6: new tree length is 4.082881.
+	SPR      1: new tree length is 4.087191.
+	SPR      2: new tree length is 4.085538.
+	SPR      3: new tree length is 4.083875.
+	SPR      4: new tree length is 4.083213.
+	SPR      5: new tree length is 4.082931.
+	SPR      6: new tree length is 4.082881.
+	TBR      1: new tree length is 4.085258.
+	TBR      2: new tree length is 4.083592.
+	TBR      3: new tree length is 4.082881.
+	Performed 6 NNI(s), 6 SPR(s) and 3 TBR(s).
+
+	##### Boostraps n°3 #####
+	Before NNI:     tree length is 4.059025.
+	NNI      1: new tree length is 4.052814.
+	NNI      2: new tree length is 4.050303.
+	NNI      3: new tree length is 4.049152.
+	NNI      4: new tree length is 4.048006.
+	NNI      5: new tree length is 4.046008.
+	NNI      6: new tree length is 4.045566.
+	NNI      7: new tree length is 4.045197.
+	SPR      1: new tree length is 4.052814.
+	SPR      2: new tree length is 4.049993.
+	SPR      3: new tree length is 4.047483.
+	SPR      4: new tree length is 4.046008.
+	SPR      5: new tree length is 4.045566.
+	SPR      6: new tree length is 4.045197.
+	TBR      1: new tree length is 4.049449.
+	TBR      2: new tree length is 4.046658.
+	TBR      3: new tree length is 4.046008.
+	TBR      4: new tree length is 4.045566.
+	TBR      5: new tree length is 4.045197.
+	Performed 7 NNI(s), 6 SPR(s) and 5 TBR(s).
+
+	##### Boostraps n°4 #####
+	Before NNI:     tree length is 4.174248.
+	NNI      1: new tree length is 4.170837.
+	NNI      2: new tree length is 4.163035.
+	NNI      3: new tree length is 4.151402.
+	NNI      4: new tree length is 4.146603.
+	NNI      5: new tree length is 4.144120.
+	NNI      6: new tree length is 4.143495.
+	NNI      7: new tree length is 4.142944.
+	NNI      8: new tree length is 4.142755.
+	NNI      9: new tree length is 4.142654.
+	SPR      1: new tree length is 4.143882.
+	SPR      2: new tree length is 4.143243.
+	SPR      3: new tree length is 4.142944.
+	SPR      4: new tree length is 4.142755.
+	SPR      5: new tree length is 4.142421.
+	SPR      6: new tree length is 4.142321.
+	SPR      7: new tree length is 4.142321.
+	TBR      1: new tree length is 4.143243.
+	TBR      2: new tree length is 4.142944.
+	TBR      3: new tree length is 4.142755.
+	TBR      4: new tree length is 4.142421.
+	TBR      5: new tree length is 4.142321.
+	TBR      6: new tree length is 4.142321.
+	Performed 9 NNI(s), 7 SPR(s) and 6 TBR(s).
+
+	##### Boostraps n°5 #####
+	Before NNI:     tree length is 4.223635.
+	NNI      1: new tree length is 4.219623.
+	NNI      2: new tree length is 4.216583.
+	NNI      3: new tree length is 4.209093.
+	NNI      4: new tree length is 4.203555.
+	NNI      5: new tree length is 4.200204.
+	NNI      6: new tree length is 4.197383.
+	NNI      7: new tree length is 4.194645.
+	NNI      8: new tree length is 4.192139.
+	NNI      9: new tree length is 4.190077.
+	NNI     10: new tree length is 4.188488.
+	NNI     11: new tree length is 4.188322.
+	SPR      1: new tree length is 4.212062.
+	SPR      2: new tree length is 4.204843.
+	SPR      3: new tree length is 4.200193.
+	SPR      4: new tree length is 4.195653.
+	SPR      5: new tree length is 4.192883.
+	SPR      6: new tree length is 4.190259.
+	SPR      7: new tree length is 4.188219.
+	SPR      8: new tree length is 4.187366.
+	SPR      9: new tree length is 4.184499.
+	SPR     10: new tree length is 4.184326.
+	SPR     11: new tree length is 4.187751.
+	SPR     12: new tree length is 4.187292.
+	SPR     13: new tree length is 4.184326.
+	TBR      1: new tree length is 4.211100.
+	TBR      2: new tree length is 4.202845.
+	TBR      3: new tree length is 4.195626.
+	TBR      4: new tree length is 4.190962.
+	TBR      5: new tree length is 4.188219.
+	TBR      6: new tree length is 4.187366.
+	TBR      7: new tree length is 4.184499.
+	TBR      8: new tree length is 4.184326.
+	TBR      9: new tree length is 4.187751.
+	TBR     10: new tree length is 4.187292.
+	TBR     11: new tree length is 4.184326.
+	Performed 11 NNI(s), 13 SPR(s) and 11 TBR(s).
+
+	##### Boostraps n°6 #####
+	Before NNI:     tree length is 4.228934.
+	NNI      1: new tree length is 4.218145.
+	NNI      2: new tree length is 4.196406.
+	NNI      3: new tree length is 4.193158.
+	NNI      4: new tree length is 4.186574.
+	NNI      5: new tree length is 4.183665.
+	NNI      6: new tree length is 4.181142.
+	NNI      7: new tree length is 4.178853.
+	NNI      8: new tree length is 4.176754.
+	NNI      9: new tree length is 4.174498.
+	NNI     10: new tree length is 4.172885.
+	NNI     11: new tree length is 4.171897.
+	NNI     12: new tree length is 4.171282.
+	SPR      1: new tree length is 4.184320.
+	SPR      2: new tree length is 4.181392.
+	SPR      3: new tree length is 4.178853.
+	SPR      4: new tree length is 4.176754.
+	SPR      5: new tree length is 4.174498.
+	SPR      6: new tree length is 4.172885.
+	SPR      7: new tree length is 4.171282.
+	TBR      1: new tree length is 4.184320.
+	TBR      2: new tree length is 4.179298.
+	TBR      3: new tree length is 4.176754.
+	TBR      4: new tree length is 4.174498.
+	TBR      5: new tree length is 4.172885.
+	TBR      6: new tree length is 4.171282.
+	Performed 12 NNI(s), 7 SPR(s) and 6 TBR(s).
+
+	##### Boostraps n°7 #####
+	Before NNI:     tree length is 4.261030.
+	NNI      1: new tree length is 4.242945.
+	NNI      2: new tree length is 4.231562.
+	NNI      3: new tree length is 4.226418.
+	NNI      4: new tree length is 4.222261.
+	NNI      5: new tree length is 4.218730.
+	NNI      6: new tree length is 4.215320.
+	NNI      7: new tree length is 4.213562.
+	NNI      8: new tree length is 4.212512.
+	NNI      9: new tree length is 4.212083.
+	NNI     10: new tree length is 4.211986.
+	SPR      1: new tree length is 4.239176.
+	SPR      2: new tree length is 4.228011.
+	SPR      3: new tree length is 4.222922.
+	SPR      4: new tree length is 4.218600.
+	SPR      5: new tree length is 4.215425.
+	SPR      6: new tree length is 4.213666.
+	SPR      7: new tree length is 4.212613.
+	SPR      8: new tree length is 4.211995.
+	SPR      9: new tree length is 4.211986.
+	TBR      1: new tree length is 4.239176.
+	TBR      2: new tree length is 4.228011.
+	TBR      3: new tree length is 4.219319.
+	TBR      4: new tree length is 4.215320.
+	TBR      5: new tree length is 4.213562.
+	TBR      6: new tree length is 4.212512.
+	TBR      7: new tree length is 4.211986.
+	Performed 10 NNI(s), 9 SPR(s) and 7 TBR(s).
+
+	##### Boostraps n°8 #####
+	Before NNI:     tree length is 4.492528.
+	NNI      1: new tree length is 4.486152.
+	NNI      2: new tree length is 4.480538.
+	NNI      3: new tree length is 4.463598.
+	NNI      4: new tree length is 4.452610.
+	NNI      5: new tree length is 4.447118.
+	NNI      6: new tree length is 4.444351.
+	NNI      7: new tree length is 4.442933.
+	NNI      8: new tree length is 4.440508.
+	NNI      9: new tree length is 4.439567.
+	NNI     10: new tree length is 4.438757.
+	NNI     11: new tree length is 4.437994.
+	NNI     12: new tree length is 4.436771.
+	NNI     13: new tree length is 4.435257.
+	NNI     14: new tree length is 4.434712.
+	NNI     15: new tree length is 4.434209.
+	NNI     16: new tree length is 4.433416.
+	NNI     17: new tree length is 4.433072.
+	NNI     18: new tree length is 4.433000.
+	SPR      1: new tree length is 4.458616.
+	SPR      2: new tree length is 4.447733.
+	SPR      3: new tree length is 4.442229.
+	SPR      4: new tree length is 4.439097.
+	SPR      5: new tree length is 4.436302.
+	SPR      6: new tree length is 4.434260.
+	SPR      7: new tree length is 4.433201.
+	SPR      8: new tree length is 4.432257.
+	SPR      9: new tree length is 4.432334.
+	SPR     10: new tree length is 4.432257.
+	TBR      1: new tree length is 4.456147.
+	TBR      2: new tree length is 4.445367.
+	TBR      3: new tree length is 4.439265.
+	TBR      4: new tree length is 4.436302.
+	TBR      5: new tree length is 4.434260.
+	TBR      6: new tree length is 4.433201.
+	TBR      7: new tree length is 4.432257.
+	TBR      8: new tree length is 4.432334.
+	TBR      9: new tree length is 4.432257.
+	Performed 18 NNI(s), 10 SPR(s) and 9 TBR(s).
+
+	##### Boostraps n°9 #####
+	Before NNI:     tree length is 4.094459.
+	NNI      1: new tree length is 4.086003.
+	NNI      2: new tree length is 4.072170.
+	NNI      3: new tree length is 4.059421.
+	NNI      4: new tree length is 4.054063.
+	NNI      5: new tree length is 4.052959.
+	NNI      6: new tree length is 4.052744.
+	NNI      7: new tree length is 4.052543.
+	NNI      8: new tree length is 4.052383.
+	SPR      1: new tree length is 4.061329.
+	SPR      2: new tree length is 4.055968.
+	SPR      3: new tree length is 4.054063.
+	SPR      4: new tree length is 4.052799.
+	SPR      5: new tree length is 4.052583.
+	SPR      6: new tree length is 4.052383.
+	TBR      1: new tree length is 4.061329.
+	TBR      2: new tree length is 4.055968.
+	TBR      3: new tree length is 4.054063.
+	TBR      4: new tree length is 4.052799.
+	TBR      5: new tree length is 4.052583.
+	TBR      6: new tree length is 4.052383.
+	Performed 8 NNI(s), 6 SPR(s) and 6 TBR(s).
+
+	##### Boostraps n°10 #####
+	Before NNI:     tree length is 4.125235.
+	NNI      1: new tree length is 4.118274.
+	NNI      2: new tree length is 4.115011.
+	NNI      3: new tree length is 4.114169.
+	NNI      4: new tree length is 4.113104.
+	NNI      5: new tree length is 4.112170.
+	NNI      6: new tree length is 4.111857.
+	NNI      7: new tree length is 4.111654.
+	NNI      8: new tree length is 4.111494.
+	NNI      9: new tree length is 4.111421.
+	SPR      1: new tree length is 4.118274.
+	SPR      2: new tree length is 4.115011.
+	SPR      3: new tree length is 4.113104.
+	SPR      4: new tree length is 4.112170.
+	SPR      5: new tree length is 4.111784.
+	SPR      6: new tree length is 4.111427.
+	SPR      7: new tree length is 4.109993.
+	SPR      8: new tree length is 4.109749.
+	SPR      9: new tree length is 4.109585.
+	SPR     10: new tree length is 4.109535.
+	SPR     11: new tree length is 4.111025.
+	SPR     12: new tree length is 4.109598.
+	SPR     13: new tree length is 4.109547.
+	SPR     14: new tree length is 4.109535.
+	TBR      1: new tree length is 4.118138.
+	TBR      2: new tree length is 4.114849.
+	TBR      3: new tree length is 4.112945.
+	TBR      4: new tree length is 4.112010.
+	TBR      5: new tree length is 4.111625.
+	TBR      6: new tree length is 4.111266.
+	TBR      7: new tree length is 4.109830.
+	TBR      8: new tree length is 4.109585.
+	TBR      9: new tree length is 4.109535.
+	TBR     10: new tree length is 4.111025.
+	TBR     11: new tree length is 4.109598.
+	TBR     12: new tree length is 4.109547.
+	TBR     13: new tree length is 4.109535.
+	Performed 9 NNI(s), 14 SPR(s) and 13 TBR(s).
+
+	##### Boostraps n°11 #####
+	Before NNI:     tree length is 4.000515.
+	NNI      1: new tree length is 3.992985.
+	NNI      2: new tree length is 3.983236.
+	NNI      3: new tree length is 3.972682.
+	NNI      4: new tree length is 3.969835.
+	NNI      5: new tree length is 3.967940.
+	NNI      6: new tree length is 3.966344.
+	NNI      7: new tree length is 3.964993.
+	NNI      8: new tree length is 3.964209.
+	NNI      9: new tree length is 3.961826.
+	NNI     10: new tree length is 3.961373.
+	SPR      1: new tree length is 3.977057.
+	SPR      2: new tree length is 3.971181.
+	SPR      3: new tree length is 3.967703.
+	SPR      4: new tree length is 3.964691.
+	SPR      5: new tree length is 3.962963.
+	SPR      6: new tree length is 3.961373.
+	TBR      1: new tree length is 3.977057.
+	TBR      2: new tree length is 3.971181.
+	TBR      3: new tree length is 3.967703.
+	TBR      4: new tree length is 3.964691.
+	TBR      5: new tree length is 3.962963.
+	TBR      6: new tree length is 3.961373.
+	Performed 10 NNI(s), 6 SPR(s) and 6 TBR(s).
+
+	##### Boostraps n°12 #####
+	Before NNI:     tree length is 4.160588.
+	NNI      1: new tree length is 4.154865.
+	NNI      2: new tree length is 4.151577.
+	NNI      3: new tree length is 4.144892.
+	NNI      4: new tree length is 4.138033.
+	NNI      5: new tree length is 4.135517.
+	NNI      6: new tree length is 4.134095.
+	NNI      7: new tree length is 4.132699.
+	NNI      8: new tree length is 4.131926.
+	NNI      9: new tree length is 4.131224.
+	NNI     10: new tree length is 4.130503.
+	NNI     11: new tree length is 4.129735.
+	NNI     12: new tree length is 4.128736.
+	NNI     13: new tree length is 4.127686.
+	NNI     14: new tree length is 4.127339.
+	NNI     15: new tree length is 4.126592.
+	NNI     16: new tree length is 4.126281.
+	SPR      1: new tree length is 4.145837.
+	SPR      2: new tree length is 4.138531.
+	SPR      3: new tree length is 4.135167.
+	SPR      4: new tree length is 4.131926.
+	SPR      5: new tree length is 4.131224.
+	SPR      6: new tree length is 4.130503.
+	SPR      7: new tree length is 4.129735.
+	SPR      8: new tree length is 4.127686.
+	SPR      9: new tree length is 4.127339.
+	SPR     10: new tree length is 4.126592.
+	SPR     11: new tree length is 4.126281.
+	TBR      1: new tree length is 4.145837.
+	TBR      2: new tree length is 4.138033.
+	TBR      3: new tree length is 4.135200.
+	TBR      4: new tree length is 4.132699.
+	TBR      5: new tree length is 4.131379.
+	TBR      6: new tree length is 4.129536.
+	TBR      7: new tree length is 4.128264.
+	TBR      8: new tree length is 4.127280.
+	TBR      9: new tree length is 4.126355.
+	TBR     10: new tree length is 4.126099.
+	TBR     11: new tree length is 4.126099.
+	TBR     12: new tree length is 4.126099.
+	TBR     13: new tree length is 4.126099.
+	Performed 16 NNI(s), 11 SPR(s) and 13 TBR(s).
+
+	##### Boostraps n°13 #####
+	Before NNI:     tree length is 4.090308.
+	NNI      1: new tree length is 4.083989.
+	NNI      2: new tree length is 4.078937.
+	NNI      3: new tree length is 4.073824.
+	NNI      4: new tree length is 4.070115.
+	NNI      5: new tree length is 4.067810.
+	NNI      6: new tree length is 4.063287.
+	NNI      7: new tree length is 4.061092.
+	SPR      1: new tree length is 4.080323.
+	SPR      2: new tree length is 4.073817.
+	SPR      3: new tree length is 4.067810.
+	SPR      4: new tree length is 4.063287.
+	SPR      5: new tree length is 4.061092.
+	TBR      1: new tree length is 4.080175.
+	TBR      2: new tree length is 4.071158.
+	TBR      3: new tree length is 4.064611.
+	TBR      4: new tree length is 4.061092.
+	Performed 7 NNI(s), 5 SPR(s) and 4 TBR(s).
+
+	##### Boostraps n°14 #####
+	Before NNI:     tree length is 4.339412.
+	NNI      1: new tree length is 4.334170.
+	NNI      2: new tree length is 4.327213.
+	NNI      3: new tree length is 4.321533.
+	NNI      4: new tree length is 4.313334.
+	NNI      5: new tree length is 4.309415.
+	NNI      6: new tree length is 4.305977.
+	NNI      7: new tree length is 4.303608.
+	NNI      8: new tree length is 4.301589.
+	NNI      9: new tree length is 4.300224.
+	NNI     10: new tree length is 4.299057.
+	NNI     11: new tree length is 4.299019.
+	NNI     12: new tree length is 4.298836.
+	NNI     13: new tree length is 4.297928.
+	NNI     14: new tree length is 4.297924.
+	SPR      1: new tree length is 4.310700.
+	SPR      2: new tree length is 4.304960.
+	SPR      3: new tree length is 4.302436.
+	SPR      4: new tree length is 4.300421.
+	SPR      5: new tree length is 4.299057.
+	SPR      6: new tree length is 4.299019.
+	SPR      7: new tree length is 4.298836.
+	SPR      8: new tree length is 4.297924.
+	TBR      1: new tree length is 4.310700.
+	TBR      2: new tree length is 4.304960.
+	TBR      3: new tree length is 4.302436.
+	TBR      4: new tree length is 4.300421.
+	TBR      5: new tree length is 4.299057.
+	TBR      6: new tree length is 4.297924.
+	Performed 14 NNI(s), 8 SPR(s) and 6 TBR(s).
+
+	##### Boostraps n°15 #####
+	Before NNI:     tree length is 4.174318.
+	NNI      1: new tree length is 4.161065.
+	NNI      2: new tree length is 4.153453.
+	NNI      3: new tree length is 4.151609.
+	NNI      4: new tree length is 4.151304.
+	NNI      5: new tree length is 4.151009.
+	SPR      1: new tree length is 4.161065.
+	SPR      2: new tree length is 4.153453.
+	SPR      3: new tree length is 4.151609.
+	SPR      4: new tree length is 4.151175.
+	SPR      5: new tree length is 4.150881.
+	SPR      6: new tree length is 4.150881.
+	TBR      1: new tree length is 4.153453.
+	TBR      2: new tree length is 4.151609.
+	TBR      3: new tree length is 4.151175.
+	TBR      4: new tree length is 4.150881.
+	TBR      5: new tree length is 4.150881.
+	Performed 5 NNI(s), 6 SPR(s) and 5 TBR(s).
+

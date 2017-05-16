@@ -1,0 +1,80 @@
+FastME is a phylogeny building program that works on distance matrices and, 
+as of v2.0, sequence data.  
+
+Files in src directory include:
+
+BIONJ.c - BIONJ functions for building NJ and BIONJ trees
+bme.c - BME (Balanced Minimum Evolution) functions for building BLS ME trees
+bNNI.c - FastBNNI functions
+distance.c - functions for building distance matrices from sequence data
+FastDist.c - functions for fast building distance matrices from DNA sequences
+fastme.c - the main program
+gme.c - GME (Greedy Minimum Evolution) functions for building OLS ME trees
+graph.c - functions for building tree and set data structures
+heap.c - routines for handling heap for NNI and BNNI
+inputs.c - functions for loading data
+interface_options.c - functions for command line and PHYLIP like interface
+interface_utilities.c - utilities for interface functions
+MVR.c - functions for MVR algorithm used to implement UNJ
+newick.c - functions for inputting and outputting trees in Newick format
+NNI.c - FastNNI functions
+print.c - functions for printing output
+p_bootstrap.c - functions from PhyML to integrate branch support values into newick string
+p_eigen.c - functions from PhyML for computing distance matrices from protein sequences
+p_lk.c - functions from PhyML for computing distance matrices from protein sequences
+p_models.c - functions from PhyML for computing distance matrices from protein sequences
+p_optimiz.c - functions from PhyML for computing distance matrices from protein sequences
+p_utils.c - functions from PhyML for computing distance matrices from protein sequences
+random.c - functions for randomization used for bootstraps
+SPR.c - functions for performing subtree pruning and regrafting
+TBR.c - functions for performing tree bisection and reconnection
+traverse.c - functions for traversing tree structure, depth first or top first
+utils.c - utilities functions
+
+
+Usage:
+fastme  [-m method]  [-i input data file]  [-T input tree file]  [-f input data file format]
+[-D model|-P model|-S socring matrix file]
+[-o output tree file]  [-I output information file]
+[-B output bootstrap trees file]  [-O output matrix file]
+[-g gamma]  [-r]  [-d datasets]  [-b replicates]  [-z seed]
+[-n NNI]  [-w branch]  [-s]  [-t]  [-v]  [-h] 
+
+-m specify method for building initial tree: BME, GME, NJ, BIONJ or UNJ (default is BME)
+-i name of input file
+-T name of input tree file (optional)
+-f input file format: interleaved or sequential if input consists of sequences (default is interleaved)
+-D (DNA-formula-type) if input consists of DNA sequences
+-P (Protein-formula-type) if input consists of protein sequences
+-S (scoring matrix file) if using SCOREDIST method
+-o filename for tree output
+-I filename for execution log information
+-B filename for bootstrap trees output
+-O filename for distance matrix output
+-g gamma if input consists of sequences (default = 1)
+-r remove gaps from alignment (default is no)
+-d number of alignments/matrices input (default = 1)
+-b (# replicates) if bootstrapping (default=1)
+-z seed for randomization (if doing bootstrapping)
+-n type of NNI: balanced or OLS (default is balanced)
+-w (b)alanced or (O)LS weights (if not doing NNIs on input topology)
+-s SPR postprocessing
+-t TBR postprocessing
+-v for verbose output
+-h to get the help
+
+
+Auxiliary files include
+
+BLOSUM62.mat
+PAM250.mat
+VT160.mat
+
+BLOSUM62 from 
+http://iubio.bio.indiana.edu/soft/molbio/align/huang/BLOSUM62
+
+PAM250 from
+http://www.psc.edu/biomed/genedoc/gdsim.htm
+
+VT160 copied manually from Mueller,Vingron paper
+
